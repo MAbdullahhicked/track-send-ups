@@ -1,0 +1,2849 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track Send-Up · SSC send-up scope 2026–27</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 30V12L12 2H30V30Z' fill='%23e9eee7' stroke='%2315241c' stroke-width='2.2'/%3E%3Cpath d='M9.5 17.5 14.5 22.5 23 11.5' fill='none' stroke='%23a92b22' stroke-width='3.4'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #15241c;
+    --ink-soft: #3f5347;
+    --muted: #5d7064;
+    --paper: #e9eee7;
+    --paper-deep: #dbe3d9;
+    --green: #1d5a3d;
+    --green-dark: #123c29;
+    --red: #a92b22;
+    --amber: #e7b84b;
+    --rule: rgba(21, 36, 28, 0.18);
+    --rule-strong: rgba(21, 36, 28, 0.5);
+    --display: "Bahnschrift", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+    --serif: "Sitka Text", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --urdu: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", "Scheherazade New", "Segoe UI", serif;
+  }
+
+  @font-face {
+    font-family: "Jameel Noori Nastaleeq";
+    src: local("Jameel Noori Nastaleeq Regular"), local("Jameel Noori Nastaleeq"),
+      url("track-send-up-urdu.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * { box-sizing: border-box; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+
+  body {
+    margin: 0;
+    padding: clamp(12px, 2.4vw, 30px);
+    background: var(--green-dark);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--amber); color: var(--ink); }
+
+  .skip {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 20;
+    padding: 12px 16px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--display);
+    text-decoration: none;
+  }
+
+  .skip:focus { left: 16px; top: 16px; }
+
+  .sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  .sheet {
+    --sheet-pad: clamp(22px, 4.6vw, 60px);
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: var(--sheet-pad);
+    background-color: var(--paper);
+    background-image: radial-gradient(rgba(21, 36, 28, 0.085) 0.55px, transparent 0.55px);
+    background-size: 18px 18px;
+    border: 1px solid #0a291b;
+    border-top: 8px solid var(--green);
+    box-shadow: 12px 12px 0 #0a2517;
+  }
+
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--ink);
+    font-family: var(--display);
+    font-size: 0.82rem;
+    letter-spacing: 0.015em;
+    color: var(--ink-soft);
+  }
+
+  .masthead p { margin: 0; }
+  .masthead strong { color: var(--ink); font-weight: 600; }
+  .masthead-right { text-align: right; white-space: nowrap; }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    color: var(--ink);
+  }
+
+  .brand-mark {
+    flex: none;
+    width: 31px;
+    height: 31px;
+    overflow: visible;
+  }
+
+  .brand-sheet {
+    fill: var(--paper);
+    stroke: var(--ink);
+    stroke-width: 2.2;
+    stroke-linejoin: miter;
+  }
+
+  .brand-tick {
+    fill: none;
+    stroke: var(--red);
+    stroke-width: 3.4;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+  }
+
+  .brand-name {
+    font-family: var(--display);
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.008em;
+    color: var(--ink);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 28px 44px;
+    align-items: end;
+    padding: clamp(38px, 6.5vw, 76px) 0 clamp(30px, 4.6vw, 52px);
+  }
+
+  .hero-copy { min-width: 0; }
+
+  .hero h1 {
+    margin: 0 0 clamp(22px, 3vw, 32px);
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(3.3rem, 8.4vw, 7.2rem);
+    line-height: 0.88;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .nowrap { white-space: nowrap; }
+
+  .hero-intro {
+    max-width: 54ch;
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+    line-height: 1.58;
+  }
+
+  .stamp {
+    position: relative;
+    justify-self: end;
+    align-self: end;
+    min-width: 202px;
+    padding: 14px 18px 16px;
+    color: var(--red);
+    font-family: var(--display);
+    font-size: 0.7rem;
+    line-height: 1.35;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid currentColor;
+    box-shadow: inset 0 0 0 4px var(--paper), inset 0 0 0 5px currentColor;
+    mix-blend-mode: multiply;
+    transform: rotate(-6deg);
+    opacity: 0.92;
+    animation: stamp-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s both;
+  }
+
+  .stamp strong {
+    display: block;
+    margin: 5px 0 6px;
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 0.86;
+    letter-spacing: 0.03em;
+  }
+
+  @keyframes stamp-in {
+    from { opacity: 0; transform: rotate(-11deg) scale(1.14); }
+    to { opacity: 0.92; transform: rotate(-6deg) scale(1); }
+  }
+
+  .next-paper {
+    --band-text: #e9eee7;
+    --band-muted: rgba(233, 238, 231, 0.66);
+    --band-quiet: rgba(233, 238, 231, 0.44);
+    --band-rule: rgba(233, 238, 231, 0.16);
+    margin-inline: calc(var(--sheet-pad) * -1);
+    padding: clamp(18px, 2.8vw, 28px) var(--sheet-pad);
+    background: var(--ink);
+    color: var(--band-text);
+    scroll-margin-top: 20px;
+  }
+
+  .next-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--band-rule);
+  }
+
+  .next-head h2 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
+
+  .next-class {
+    margin: 0;
+    color: var(--band-quiet);
+    font-size: 0.78rem;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .next-main {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: clamp(16px, 3vw, 34px);
+    padding: clamp(15px, 2.4vw, 24px) 0;
+  }
+
+  .next-date {
+    display: grid;
+    justify-items: center;
+    gap: 3px;
+    width: 68px;
+    padding: 9px 6px 8px;
+    border: 1px solid rgba(233, 238, 231, 0.34);
+  }
+
+  .next-day {
+    font-family: var(--display);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 0.86;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .next-month {
+    font-family: var(--serif);
+    font-size: 0.72rem;
+    line-height: 1;
+    color: var(--band-muted);
+  }
+
+  .next-copy { min-width: 0; }
+
+  .next-subject {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(1.45rem, 2.7vw, 2.1rem);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+
+  .next-meta {
+    margin: 7px 0 0;
+    color: var(--band-muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .next-weekday { color: var(--band-text); }
+  .next-time { display: block; }
+
+  .next-clock {
+    display: flex;
+    gap: clamp(9px, 1.7vw, 19px);
+    justify-self: end;
+  }
+
+  .clock-cell {
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    min-width: 2.5ch;
+  }
+
+  .clock-num {
+    font-family: var(--display);
+    font-size: clamp(1.9rem, 4.3vw, 3.05rem);
+    font-weight: 600;
+    line-height: 0.86;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .clock-unit {
+    font-family: var(--serif);
+    font-size: 0.7rem;
+    line-height: 1;
+    color: var(--band-quiet);
+  }
+
+  .next-paper.is-soon .clock-num { color: var(--amber); }
+
+  .datesheet { border-top: 1px solid var(--band-rule); }
+
+  .datesheet > summary {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    padding: 12px 0 0;
+    color: var(--band-muted);
+    font-family: var(--display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .datesheet > summary::-webkit-details-marker { display: none; }
+
+  .datesheet > summary::after {
+    content: "";
+    flex: none;
+    width: 11px;
+    height: 11px;
+    color: var(--band-quiet);
+    background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+    background-position: center, center;
+    background-size: 11px 1.5px, 1.5px 11px;
+    background-repeat: no-repeat;
+    transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1), background-size 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .datesheet.is-open > summary::after {
+    background-size: 11px 1.5px, 1.5px 0;
+    transform: rotate(180deg);
+  }
+  .datesheet > summary:hover { color: var(--band-text); text-decoration: underline; text-underline-offset: 4px; }
+  .datesheet > summary:focus-visible { outline: 3px solid var(--amber); outline-offset: 4px; }
+
+  .datesheet-count {
+    margin-left: auto;
+    color: var(--band-quiet);
+    font-family: var(--serif);
+    font-size: 0.78rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .datesheet-rows {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--band-rule);
+  }
+
+  .datesheet-row {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 6px 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--band-rule);
+  }
+
+  .datesheet-row:last-child { border-bottom: 0; }
+
+  .datesheet-when {
+    display: grid;
+    gap: 1px;
+    font-family: var(--display);
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .datesheet-day { color: var(--band-text); }
+
+  .datesheet-date {
+    color: var(--band-quiet);
+    font-family: var(--serif);
+    font-size: 0.76rem;
+  }
+
+  .datesheet-subject {
+    font-family: var(--display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .datesheet-time {
+    color: var(--band-muted);
+    font-family: var(--display);
+    font-size: 0.86rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .datesheet-foot {
+    max-width: 62ch;
+    margin: 13px 0 0;
+    color: var(--band-quiet);
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .confetti {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    pointer-events: none;
+  }
+
+  .study-log {
+    display: grid;
+    grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
+    grid-template-areas:
+      "head book"
+      "actions book";
+    align-items: start;
+    gap: 0 clamp(34px, 5vw, 64px);
+    margin-inline: calc(var(--sheet-pad) * -1);
+    padding: clamp(22px, 3.4vw, 34px) var(--sheet-pad) clamp(24px, 3.6vw, 36px);
+    background: var(--paper-deep);
+    border-top: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .log-head { grid-area: head; min-width: 0; }
+
+  .log-head h2 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
+
+  .log-total {
+    margin: 5px 0 0;
+    font-family: var(--display);
+    font-size: clamp(4.2rem, 7vw, 6.6rem);
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .log-of {
+    color: var(--ink-soft);
+    font-size: 0.34em;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .log-caption {
+    margin: 8px 0 0;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .log-note {
+    max-width: 29ch;
+    margin: 13px 0 0;
+    color: var(--ink-soft);
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .log-book {
+    grid-area: book;
+    min-width: 0;
+    padding-top: 2px;
+  }
+
+  .log-subject {
+    display: grid;
+    grid-template-columns: minmax(140px, 0.62fr) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px 18px;
+    width: 100%;
+    padding: 11px 0;
+    border: 0;
+    border-top: 1px solid var(--rule);
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .log-subject:first-child { border-top: 0; }
+  .log-subject:focus-visible { outline-offset: -2px; }
+  .log-subject:hover { background: rgba(233, 238, 231, 0.46); }
+  .log-subject:hover .log-name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .log-subject:hover .log-mark { border-color: var(--ink-soft); }
+
+  .log-name {
+    min-width: 0;
+    font-family: var(--display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .log-marks {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .log-mark {
+    flex: 0 0 auto;
+    width: clamp(13px, 1.35vw, 18px);
+    aspect-ratio: 1;
+    border: 1px solid var(--rule-strong);
+    background: transparent;
+  }
+
+  .log-mark.is-on {
+    background: var(--red);
+    border-color: var(--red);
+  }
+
+  .log-fraction {
+    color: var(--ink-soft);
+    font-family: var(--display);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .log-actions {
+    grid-area: actions;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .text-action {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--green);
+    font-family: var(--display);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .text-action:hover { text-decoration-thickness: 2px; }
+  .text-action--quiet { color: var(--ink-soft); font-weight: 400; }
+  .text-action:disabled { color: var(--muted); text-decoration: none; cursor: default; }
+
+  .papers {
+    padding-top: clamp(34px, 4.6vw, 54px);
+    scroll-margin-top: 20px;
+  }
+
+  .papers:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 8px;
+  }
+
+  .paper-tabs {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .paper-tab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    min-width: 0;
+    padding: 14px clamp(10px, 1.6vw, 18px) 15px;
+    border: 0;
+    border-left: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-soft);
+    font-family: var(--display);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .paper-tab:first-child { border-left: 0; }
+
+  .paper-tab::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 0;
+    background: var(--red);
+    transition: height 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .paper-tab[aria-selected="true"] { color: var(--ink); }
+  .paper-tab[aria-selected="true"]::before { height: 5px; }
+  .paper-tab:hover { background: rgba(29, 90, 61, 0.055); }
+  .paper-tab:focus-visible { outline-offset: -4px; }
+
+  .tab-name {
+    font-size: clamp(0.98rem, 1.45vw, 1.2rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+
+  .tab-progress {
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .paper-tab[aria-selected="true"] .tab-progress { color: var(--red); }
+
+  .tab-panels { padding-top: clamp(28px, 4.2vw, 42px); }
+  .tab-panel[hidden] { display: none; }
+
+  @keyframes panel-settle {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .tab-panel.is-switching {
+    animation: panel-settle 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .tab-panel:focus { outline: none; }
+  .tab-panel:focus-visible { outline: 3px solid var(--red); outline-offset: 6px; }
+
+  .subject {
+    scroll-margin-top: 20px;
+    padding-bottom: clamp(36px, 5vw, 52px);
+    margin-bottom: clamp(36px, 5vw, 52px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .subject:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+  .subject--stacked { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+
+  .subject--urdu .rows {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    direction: rtl;
+  }
+
+  .subject--urdu .rows > li {
+    display: flex;
+  }
+
+  .subject--urdu .rows > li > .row {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  @media (min-width: 1080px) {
+    .subject--urdu .rows {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: clamp(28px, 4vw, 64px);
+    }
+  }
+
+  .subject--pba {
+    position: relative;
+    margin-top: clamp(36px, 5vw, 52px);
+    padding-top: clamp(22px, 3vw, 32px);
+    border-top: 3px solid var(--ink);
+  }
+
+  .subject--pba::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 72px;
+    height: 3px;
+    background: var(--red);
+  }
+
+  .subject-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .subject h2 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(2.05rem, 4vw, 3.05rem);
+    font-weight: 600;
+    line-height: 0.94;
+    letter-spacing: -0.016em;
+    text-wrap: balance;
+  }
+
+  .subject-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 18px;
+  }
+
+  .subject-title-row h2 {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .subject-note {
+    flex: none;
+    padding: 8px 14px 9px;
+    border: 1px solid rgba(29, 90, 61, 0.42);
+    background: rgba(29, 90, 61, 0.08);
+    color: var(--green);
+    font-family: var(--display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  }
+
+  .subject-note:hover,
+  .subject-note:focus-visible {
+    background: var(--green);
+    border-color: var(--green);
+    color: var(--paper);
+  }
+
+  .subject-note:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 2px;
+  }
+
+  .subject-native {
+    margin-left: 10px;
+    color: var(--muted);
+    font-family: var(--urdu);
+    font-size: 0.58em;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    vertical-align: 0.04em;
+  }
+
+  .subject-facts {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 6px 20px;
+    text-align: right;
+  }
+
+  .subject-timer {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 7px;
+    margin: 0;
+    padding-left: 20px;
+    border-left: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: var(--display);
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .subject-timer .timer-value {
+    color: var(--green);
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+
+  .subject-timer.is-soon { border-left-color: rgba(169, 43, 34, 0.45); }
+  .subject-timer.is-soon .timer-label { color: var(--red); }
+  .subject-timer.is-soon .timer-value { color: var(--red); }
+
+  .subject-timer.is-past .timer-label,
+  .subject-timer.is-past .timer-value { color: var(--muted); }
+
+  .subject-meta {
+    margin: 9px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .subject-scope {
+    flex: none;
+    margin: 0;
+    color: var(--ink-soft);
+    font-family: var(--display);
+    font-size: 0.8rem;
+    line-height: 1.35;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .subject-scope strong {
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .group + .group {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .group-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 22px 0 8px;
+    font-family: var(--display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .group-title .group-note {
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 0.86rem;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .group-title .group-link {
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+  }
+
+  .subject--urdu .group + .group {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .group-title--urdu {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px 20px;
+    margin: 24px 0 0;
+    padding: 0 0 7px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .group-title--urdu .group-label {
+    color: var(--ink);
+    font-family: var(--urdu);
+    font-size: clamp(1.55rem, 2.3vw, 1.9rem);
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+
+  .group-title--urdu .group-note {
+    color: var(--muted);
+    font-family: var(--display);
+    font-size: 0.74rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .rows { margin: 0; padding: 0; list-style: none; }
+
+  .row-head {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 12px;
+    align-items: end;
+    padding: 8px 8px 6px;
+    border-bottom: 1px solid var(--ink);
+    color: var(--muted);
+    font-family: var(--display);
+    font-size: 0.73rem;
+    line-height: 1.2;
+  }
+
+  .row {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 10px;
+    padding: 14px 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .row-label {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+    min-width: 0;
+    cursor: pointer;
+  }
+
+  .row-note {
+    flex: none;
+    margin-top: 1px;
+    padding: 3px 9px 4px;
+    border: 1px solid var(--rule-strong);
+    color: var(--green);
+    font-family: var(--display);
+    font-size: 0.74rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .row-note:hover {
+    background: var(--green);
+    border-color: var(--green);
+    color: var(--paper);
+  }
+
+  .row:hover { background: rgba(29, 90, 61, 0.055); }
+  .row:focus-within { background: rgba(231, 184, 75, 0.11); }
+
+  .row input,
+  .exercise-tick input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .box {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    margin-top: 2px;
+    border: 1.5px solid var(--ink-soft);
+    background: transparent;
+  }
+
+  .row:hover .box { border-color: var(--ink); }
+
+  .row input:checked + .box {
+    background: var(--red);
+    border-color: var(--red);
+  }
+
+  .row input:checked + .box::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 11px;
+    border: solid var(--paper);
+    border-width: 0 2px 2px 0;
+    transform: rotate(42deg);
+  }
+
+  .row input:focus-visible + .box {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+  }
+
+  .item {
+    min-width: 0;
+    font-size: 1.01rem;
+    line-height: 1.42;
+  }
+
+  .item-no {
+    margin-right: 0.55em;
+    color: var(--green);
+    font-family: var(--display);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .form {
+    margin-left: 0.28em;
+    color: var(--muted);
+    font-size: 0.92em;
+    font-style: italic;
+  }
+
+  .row--urdu {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 8px 10px;
+    direction: ltr;
+  }
+
+  .row--urdu .row-label {
+    flex: 1 1 auto;
+    align-items: start;
+    direction: rtl;
+  }
+
+  .row--urdu .row-note {
+    order: -1;
+    align-self: center;
+  }
+
+  .row--urdu .box {
+    margin-top: 7px;
+  }
+
+  .item--urdu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 2px 14px;
+    min-width: 0;
+    direction: rtl;
+  }
+
+  .urdu-title {
+    order: 1;
+    flex: 0 1 auto;
+    min-width: 0;
+    color: var(--ink);
+    font-family: var(--urdu);
+    font-size: clamp(1.45rem, 1.95vw, 1.7rem);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0;
+    text-align: right;
+    overflow-wrap: break-word;
+  }
+
+  .urdu-no {
+    order: 0;
+    flex: none;
+    min-width: 2.1em;
+    color: var(--green);
+    font-family: var(--display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  .urdu-gloss {
+    order: 2;
+    flex: 0 1 auto;
+    min-width: 0;
+    color: var(--muted);
+    font-family: var(--display);
+    font-size: 0.75rem;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    text-align: right;
+  }
+
+  .row.is-done .item-title { color: var(--ink-soft); }
+  .row.is-done .item-no { color: var(--red); }
+  .row.is-done .urdu-title { color: var(--ink-soft); }
+  .row.is-done .urdu-no { color: var(--red); }
+  .row.is-target { background: rgba(231, 184, 75, 0.28); }
+
+  .section-note {
+    max-width: 62ch;
+    margin: 18px 0 0;
+    padding-left: 14px;
+    border-left: 3px solid var(--amber);
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .math-entry { border-bottom: 1px solid var(--rule); }
+  .math-entry > .row { padding-bottom: 7px; border-bottom: 0; }
+
+  .collapse {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 340ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .collapse-inner {
+    display: flow-root;
+    min-height: 0;
+  }
+
+  .collapse.is-animating > .collapse-inner { overflow: hidden; }
+
+  .exercise-drawer { margin: 0 8px 0 48px; }
+
+  .exercise-drawer > summary {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 7px;
+    padding: 0 0 12px;
+    color: var(--green);
+    font-family: var(--display);
+    font-size: 0.76rem;
+    font-weight: 600;
+    line-height: 1.2;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .exercise-drawer > summary::-webkit-details-marker { display: none; }
+
+  .exercise-drawer > summary::after {
+    content: "";
+    flex: none;
+    width: 11px;
+    height: 11px;
+    color: var(--ink-soft);
+    background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+    background-position: center, center;
+    background-size: 11px 1.5px, 1.5px 11px;
+    background-repeat: no-repeat;
+    transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1), background-size 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .exercise-drawer.is-open > summary { padding-bottom: 8px; }
+
+  .exercise-drawer.is-open > summary::after {
+    background-size: 11px 1.5px, 1.5px 0;
+    transform: rotate(180deg);
+  }
+  .exercise-drawer > summary:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .exercise-drawer > summary:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+  .exercise-links {
+    padding: 0 0 12px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .exercise-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .exercise-link:last-child { border-bottom: 0; }
+  .exercise-link:hover { background: rgba(29, 90, 61, 0.055); }
+
+  .exercise-tick {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .exercise-tick .box {
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .exercise-tick:hover .box { border-color: var(--ink); }
+
+  .exercise-tick input:checked + .box {
+    background: var(--red);
+    border-color: var(--red);
+  }
+
+  .exercise-tick input:checked + .box::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 9px;
+    border: solid var(--paper);
+    border-width: 0 2px 2px 0;
+    transform: rotate(42deg);
+  }
+
+  .exercise-tick input:focus-visible + .box {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+  }
+
+  .exercise-name { font-size: 0.88rem; line-height: 1.35; }
+  .exercise-link.is-done .exercise-name { color: var(--ink-soft); }
+
+  .cutoff {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 28px;
+    margin-top: clamp(46px, 6.5vw, 78px);
+    padding-top: 18px;
+    border-top: 3px solid var(--ink);
+    position: relative;
+  }
+
+  .cutoff::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 72px;
+    height: 3px;
+    background: var(--red);
+  }
+
+  .cutoff-label {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .cutoff p:last-child {
+    max-width: 56ch;
+    margin: 0;
+    text-align: right;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.79rem;
+    line-height: 1.5;
+  }
+
+  .footer p { max-width: 62ch; margin: 0; }
+  .footer p:last-child { text-align: right; }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 1000px) {
+    .paper-tabs { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .paper-tab {
+      grid-column: span 2;
+      border-top: 1px solid var(--rule);
+    }
+    .paper-tab:nth-child(-n + 3) { border-top: 0; }
+    .paper-tab:nth-child(3n + 1) { border-left: 0; }
+    .paper-tab:nth-child(7),
+    .paper-tab:nth-child(8) {
+      grid-column: span 3;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid var(--rule);
+    }
+    .paper-tab:nth-child(7) { border-left: 0; }
+  }
+
+  @media (max-width: 900px) {
+    .study-log {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas:
+        "head"
+        "book"
+        "actions";
+      gap: 24px;
+    }
+
+    .log-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas:
+        "title total"
+        "caption total"
+        "note note";
+      align-items: end;
+      gap: 0 22px;
+    }
+
+    .log-head h2 { grid-area: title; }
+    .log-total { grid-area: total; margin-top: 0; }
+    .log-caption { grid-area: caption; }
+    .log-note { grid-area: note; max-width: none; margin-top: 12px; }
+
+    .log-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      align-items: start;
+    }
+
+    .stamp {
+      justify-self: start;
+      margin-top: 4px;
+      margin-left: 4px;
+    }
+
+    .subject-head { align-items: flex-start; }
+
+    .next-main {
+      grid-template-columns: auto minmax(0, 1fr);
+      grid-template-areas:
+        "date copy"
+        "clock clock";
+      align-items: start;
+      row-gap: 18px;
+    }
+    .next-date { grid-area: date; }
+    .next-copy { grid-area: copy; }
+    .next-clock { grid-area: clock; justify-self: start; }
+
+    .urdu-title {
+      font-size: clamp(1.4rem, 5vw, 1.6rem);
+      line-height: 1.85;
+    }
+
+    .urdu-gloss { font-size: 0.72rem; }
+
+    .row--urdu { padding: 7px 2px 9px; }
+    .row--urdu .box { margin-top: 6px; }
+    .item--urdu { gap: 1px 10px; }
+    .urdu-no { min-width: 1.9em; }
+  }
+
+  @media (max-width: 620px) {
+    body { padding: 10px; }
+    .sheet { --sheet-pad: 18px; padding: 20px var(--sheet-pad) 26px; box-shadow: 7px 7px 0 #0a2517; }
+    .masthead { font-size: 0.73rem; }
+    .masthead-right { display: none; }
+
+    .study-log { gap: 20px; }
+    .log-total { font-size: 4.2rem; }
+
+    .next-paper { padding-block: 18px; }
+    .datesheet-row {
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas:
+        "subject time"
+        "when when";
+      row-gap: 3px;
+    }
+    .datesheet-subject { grid-area: subject; }
+    .datesheet-time { grid-area: time; align-self: center; }
+    .datesheet-when {
+      grid-area: when;
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+    }
+    .log-subject {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px 12px;
+      padding: 12px 0;
+    }
+    .log-marks { grid-column: 1 / -1; grid-row: 2; }
+    .log-fraction { grid-column: 2; grid-row: 1; }
+
+    .subject-head { display: block; }
+    .subject-facts {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      margin-top: 12px;
+      text-align: left;
+    }
+    .subject-scope {
+      margin-top: 0;
+      text-align: left;
+      white-space: normal;
+    }
+    .subject-scope strong { font-size: 1.5rem; }
+    .subject-timer {
+      padding-left: 0;
+      border-left: 0;
+    }
+
+    .row-head { grid-template-columns: 26px minmax(0, 1fr); gap: 8px; padding: 8px 2px 6px; }
+    .row { padding: 12px 2px; }
+    .row-label { grid-template-columns: 26px minmax(0, 1fr); gap: 8px; }
+    .row--urdu { padding: 8px 2px 9px; }
+    .group-title--urdu { gap: 3px 12px; }
+    .math-entry > .row { padding-bottom: 6px; }
+    .exercise-drawer { margin-left: 36px; }
+    .box { width: 20px; height: 20px; }
+    .row input:checked + .box::after { left: 5px; }
+    .item { font-size: 0.97rem; }
+
+    .cutoff, .footer { display: block; }
+    .cutoff p:last-child, .footer p:last-child { margin-top: 10px; text-align: left; }
+  }
+
+  @media (max-width: 430px) {
+    .hero h1 { font-size: clamp(3.2rem, 15vw, 4.2rem); }
+    .stamp { min-width: 178px; }
+    .stamp strong { font-size: 1.8rem; }
+    .form { display: block; margin-left: 1.36em; }
+
+    .paper-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .paper-tab { grid-column: span 1; }
+    .paper-tab:nth-child(n + 3) { border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+    .paper-tab:nth-child(odd) { border-left: 0; }
+    .paper-tab:nth-child(-n + 2) { border-top: 0; }
+    .paper-tab:nth-child(7),
+    .paper-tab:nth-child(8) {
+      grid-column: span 1;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 5px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  @media print {
+    body { padding: 0; background: #fff; }
+    .sheet { max-width: none; padding: 0; background: #fff; border: 0; box-shadow: none; }
+    .skip, .study-log, .paper-tabs, .next-paper { display: none; }
+    .papers, .tab-panels { padding-top: 0; }
+    .tab-panel[hidden] { display: block !important; }
+    .tab-panel + .tab-panel {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #000;
+    }
+    .row:hover { background: none; }
+    .row { break-inside: avoid; }
+    .stamp { animation: none; }
+    .footer, .cutoff { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#papers">Skip to the syllabus</a>
+<div class="sheet">
+  <header class="masthead">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path class="brand-sheet" d="M2 30V12L12 2H30V30Z"/>
+        <path class="brand-tick" d="M9.5 17.5 14.5 22.5 23 11.5"/>
+      </svg>
+      <span class="brand-name">Track Send-Up</span>
+    </div>
+    <p class="masthead-right">SSC send-up scope <strong>2026–27</strong></p>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <h1 id="page-title">The <span class="nowrap">send-up</span> syllabus.</h1>
+        <p class="hero-intro">Every chapter, text, surah and practical in the 2026–27 send-up scope, arranged in date-sheet order from Mathematics to Computer Science. Chemistry and Computer Science carry their practicals on the same tab, Urdu titles include a Roman reading line, and Tarjuma Tul Quran runs to Surah Bani Israil. Progress is saved in this browser.</p>
+      </div>
+      <div class="stamp" role="img" aria-label="Send-up scope, 2026–27">
+        <span>In scope</span>
+        <strong>Send-up</strong>
+        <span>SSC 2026–27</span>
+      </div>
+    </section>
+
+    <section class="next-paper" id="next-paper" aria-labelledby="next-paper-title">
+      <div class="next-head">
+        <h2 id="next-paper-title">Next paper</h2>
+        <p class="next-class">Class X date sheet</p>
+      </div>
+      <div class="next-main">
+        <div class="next-date" id="next-date" aria-hidden="true">
+          <span class="next-day" id="next-day">10</span>
+          <span class="next-month" id="next-month">Nov</span>
+        </div>
+        <div class="next-copy">
+          <p class="next-subject" id="next-subject">Mathematics</p>
+          <p class="next-meta">
+            <span class="next-weekday" id="next-weekday">Tuesday 10 November</span>
+            <span class="next-time" id="next-time">Be there for 07:00. Paper runs 09:00–12:00.</span>
+          </p>
+        </div>
+        <div class="next-clock" id="next-clock">
+          <span class="clock-cell"><span class="clock-num" data-clock="d">00</span><span class="clock-unit">days</span></span>
+          <span class="clock-cell"><span class="clock-num" data-clock="h">00</span><span class="clock-unit">hrs</span></span>
+          <span class="clock-cell"><span class="clock-num" data-clock="m">00</span><span class="clock-unit">mins</span></span>
+          <span class="clock-cell"><span class="clock-num" data-clock="s">00</span><span class="clock-unit">secs</span></span>
+        </div>
+      </div>
+      <details class="datesheet" id="datesheet">
+        <summary>
+          <span>All exam days</span>
+          <span class="datesheet-count" id="datesheet-count">11 papers</span>
+        </summary>
+        <div class="collapse">
+          <div class="collapse-inner">
+            <ol class="datesheet-rows" id="datesheet-rows"></ol>
+            <p class="datesheet-foot" id="datesheet-foot"></p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="study-log" aria-labelledby="log-title">
+      <div class="log-head">
+        <h2 id="log-title">Study log</h2>
+        <p class="log-total"><span id="done-count">0</span><span class="log-of"> / <span id="total-count">87</span></span></p>
+        <p class="log-caption">items ticked</p>
+        <p class="log-note">Select a paper to open it. Progress is saved in this browser.</p>
+      </div>
+      <div class="log-book" id="log-subjects"></div>
+      <div class="log-actions">
+        <button class="text-action text-action--quiet" type="button" id="reset">Reset all ticks</button>
+      </div>
+      <p class="sr-only" id="log-status" aria-live="polite"></p>
+    </section>
+
+    <section class="papers" id="papers" aria-label="Syllabus papers" tabindex="-1">
+      <div class="paper-tabs" id="paper-tabs" role="tablist" aria-label="Syllabus papers"></div>
+      <div class="tab-panels" id="tab-panels"></div>
+    </section>
+
+    <section class="cutoff" aria-label="End of send-up scope">
+      <p class="cutoff-label">Send-up scope ends here</p>
+      <p>The weeks that follow belong to revision and the send-up examinations themselves.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Scope drawn from the Session 2026–27 course plans for Mathematics, English, Pakistan Studies, Chemistry, Urdu, Tarjuma Tul Quran, Physics and Computer Science.</p>
+      <p>Exam dates follow the school’s date sheet and may be confirmed closer to the time.</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  const subjects = [
+    {
+      id: "mathematics",
+      name: "Mathematics",
+      meta: ["Class X", "FBISE, NBF textbook"],
+      count: 8,
+      unitLabel: "chapters",
+      itemColumn: "Chapter",
+      note: "Chapter-wise scope, with the textbook exercises listed under each chapter.",
+      groups: [
+        {
+          items: [
+            { id: "math-01", no: "01", title: "Complex Numbers", exercises: ["1.1", "1.2", "1.3"] },
+            { id: "math-02", no: "02", title: "Quadratic Equations", exercises: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"] },
+            { id: "math-03", no: "03", title: "Matrices and Determinants", exercises: ["3.1", "3.2", "3.3", "3.4"] },
+            { id: "math-04", no: "04", title: "Linear and Quadratic Inequalities", exercises: ["4.1", "4.2", "4.3", "4.4"] },
+            { id: "math-06", no: "06", title: "Functions and Graphs", exercises: ["6.1", "6.2", "6.3"] },
+            { id: "math-07", no: "07", title: "Vectors in Plane", exercises: ["7.1", "7.2"] },
+            { id: "math-08", no: "08", title: "Application of Trigonometry", exercises: ["8.1", "8.2", "8.3", "8.4", "8.5", "8.6"] },
+            { id: "math-09", no: "09", title: "Chord and Arcs of a Circle", exercises: ["9.1", "9.2", "9.3", "9.4"] }
+          ]
+        }
+      ]
+    },
+    {
+      id: "english",
+      name: "English",
+      meta: ["Class X", "Model Textbook of English, Cantab Publisher"],
+      count: 11,
+      unitLabel: "texts",
+      itemColumn: "Text",
+      groups: [
+        {
+          items: [
+            { id: "eng-01", no: "01", title: "Hazrat Muhammad (The Pioneer of Islamic Economy)" },
+            { id: "eng-02", no: "02", title: "Exploring the Beauty of Pakistan" },
+            { id: "eng-03", no: "03", title: "Clearing in the Sky" },
+            { id: "eng-04", no: "04", title: "To Fight Aloud is Very Brave", form: "poem" },
+            { id: "eng-05", no: "05", title: "Sustainable Development Goals – Pressing Global Issues" },
+            { id: "eng-06", no: "06", title: "When I Die", form: "poem" },
+            { id: "eng-07", no: "07", title: "The Aged Mother" },
+            { id: "eng-08", no: "08", title: "The Book That Saved Earth" },
+            { id: "eng-09", no: "09", title: "A Tale of Unsung Freedom Fighter" },
+            { id: "eng-10", no: "10", title: "The Tables Turned", form: "poem" },
+            { id: "eng-11", no: "11", title: "If", form: "poem" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pakistan-studies",
+      name: "Pakistan Studies",
+      meta: ["Class X", "Books I and II"],
+      count: 11,
+      unitLabel: "chapters",
+      itemColumn: "Chapter",
+      groups: [
+        {
+          label: "Book I",
+          note: "9 chapters",
+          notesBase: "https://studyplusplus.com/fbise/9/pakistan-studies/chapter-",
+          items: [
+            { id: "pak-b1-01", no: "01", title: "Ideological Basis of Pakistan", notes: 1 },
+            { id: "pak-b1-02", no: "02", title: "Establishment of Pakistan", notes: 2 },
+            { id: "pak-b1-03", no: "03", title: "Land of Pakistan", notes: 3 },
+            { id: "pak-b1-04", no: "04", title: "The Natural Topography of Pakistan", notes: 4 },
+            { id: "pak-b1-05", no: "05", title: "Climate of Pakistan", notes: 5 },
+            { id: "pak-b1-06", no: "06", title: "Water Resources", notes: 6 },
+            { id: "pak-b1-07", no: "07", title: "Population Structure and Growth", notes: 7 },
+            { id: "pak-b1-08", no: "08", title: "Agriculture and Organic Farming", notes: 8 },
+            { id: "pak-b1-09", no: "09", title: "Transport and Trade", notes: 9 }
+          ]
+        },
+        {
+          label: "Book II",
+          note: "2 chapters",
+          notesBase: "https://studyplusplus.com/fbise/10/pakistan-studies/chapter-",
+          items: [
+            { id: "pak-b2-01", no: "01", title: "Society and Culture of Pakistan", notes: 1 },
+            { id: "pak-b2-02", no: "02", title: "Recreation – Sports", notes: 2 }
+          ]
+        }
+      ]
+    },
+    {
+      id: "chemistry",
+      name: "Chemistry",
+      logName: "Chemistry theory",
+      meta: ["Class X", "Textbook of Chemistry, Cantab Publisher"],
+      count: 9,
+      unitLabel: "chapters",
+      itemColumn: "Chapter",
+      groups: [
+        {
+          items: [
+            { id: "chem-01", no: "01", title: "Nature of Science" },
+            { id: "chem-02", no: "02", title: "State of Matter" },
+            { id: "chem-03", no: "03", title: "Stoichiometry" },
+            { id: "chem-04", no: "04", title: "Electrochemistry" },
+            { id: "chem-05", no: "05", title: "Chemical Kinetics and Reaction Rates" },
+            { id: "chem-06", no: "06", title: "Salt" },
+            { id: "chem-07", no: "07", title: "Nitrogen and Sulphur" },
+            { id: "chem-08", no: "08", title: "Nomenclature of Organic Chemistry" },
+            { id: "chem-09", no: "09", title: "Hydrocarbon" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pba",
+      name: "Chemistry PBA",
+      meta: ["Class X", "Practical Based Assessment"],
+      count: 9,
+      unitLabel: "practicals",
+      itemColumn: "Practical",
+      groups: [
+        {
+          label: "Section A",
+          note: "4 practicals",
+          items: [
+            { id: "pba-a-01", no: "01", title: "Separation of a mixture of water and alcohols by fractional distillation" },
+            { id: "pba-a-02", no: "02", title: "Separate a given mixture of inks by paper chromatography" },
+            { id: "pba-a-03", no: "03", title: "Separate Pb²⁺ and Cd²⁺ ions by paper chromatography" },
+            { id: "pba-a-04", no: "04", title: "Determine the exact molarity of the NaOH solution volumetrically" }
+          ]
+        },
+        {
+          label: "Section B",
+          note: "5 practicals",
+          items: [
+            { id: "pba-b-01", no: "01", title: "Separate naphthalene from a given mixture of sand and salt by sublimation" },
+            { id: "pba-b-02", no: "02", title: "Identify the following metal ions by flame test: Na⁺, K⁺, Ca²⁺, Cu²⁺ and Ba²⁺" },
+            { id: "pba-b-03", no: "03", title: "Prepare pure crystals of CuSO₄·5H₂O" },
+            { id: "pba-b-04", no: "04", title: "Determine the melting point of naphthalene" },
+            { id: "pba-b-05", no: "05", title: "Determine the boiling point of ethyl alcohol" }
+          ]
+        }
+      ],
+      note: "Nine practicals across Section A and Section B, from separations and volumetric work to melting and boiling point determinations."
+    },
+    {
+      id: "urdu",
+      name: "Urdu",
+      nativeName: "اردو",
+      logName: "Urdu",
+      lang: "ur",
+      meta: ["Class X", "Urdu study plan 2026–27"],
+      count: 15,
+      unitLabel: "lessons",
+      itemColumn: "Chapter",
+      note: "Chapter numbers follow the textbook, and each entry carries a Roman reading line.",
+      groups: [
+        {
+          label: "اسباق",
+          note: "Prose, lessons 3–10",
+          items: [
+            { id: "urdu-01", no: "03", title: "اخلاقِ نبویؐ", roman: "Akhlaq-e-Nabwi ﷺ" },
+            { id: "urdu-02", no: "04", title: "محسن محلہ", roman: "Mohsin Muhalla" },
+            { id: "urdu-03", no: "05", title: "کفارہ", roman: "Kaffara" },
+            { id: "urdu-04", no: "06", title: "چغل خور", roman: "Chugal Khor" },
+            { id: "urdu-05", no: "07", title: "اولڈ ایج ہوم", roman: "Old Age Home" },
+            { id: "urdu-06", no: "08", title: "میرا گاؤں", roman: "Mera Gaon" },
+            { id: "urdu-07", no: "09", title: "سر سید کا بچپن", roman: "Sir Syed ka Bachpan" },
+            { id: "urdu-08", no: "10", title: "سویرے جو کل آنکھ میری کھلی", roman: "Sawere Jo Kal Aankh Meri Khuli" }
+          ]
+        },
+        {
+          label: "نظمیں",
+          note: "Poems, lessons 1, 2, 13 and 14",
+          items: [
+            { id: "urdu-09", no: "01", title: "حمد", roman: "Hamd" },
+            { id: "urdu-10", no: "02", title: "نعت", roman: "Naat" },
+            { id: "urdu-11", no: "13", title: "خطاب بہ جوانانِ اسلام", roman: "Khitaab ba Jawanan-e-Islam" },
+            { id: "urdu-12", no: "14", title: "مرثیہ سے اقتباس (آمد صبح)", roman: "Marsiya se Iqtibas (Aamad-e-Subh)" }
+          ]
+        },
+        {
+          label: "غزلیں",
+          note: "Ghazals, lessons 17–19",
+          items: [
+            { id: "urdu-17", no: "17", title: "بازیچہ اطفال ہے دنیا میرے آگے", roman: "Bazicha-e-Atfal Hai Dunya Mere Aage" },
+            { id: "urdu-18", no: "18", title: "ہے مشقِ سخن جاری چکی کی مشقت بھی", roman: "Hai Mashq-e-Sukhan Jari Chakki Ki Mashaqqat Bhi" },
+            { id: "urdu-19", no: "19", title: "اثر اس کو ذرا نہیں ہوتا", roman: "Asar Usko Zara Nahi Hota" }
+          ]
+        },
+        {
+          label: "تخلیقی تحریر",
+          note: "Creative writing",
+          items: [
+            { id: "urdu-qawaid-01", no: "", uncounted: true, title: "مضمون نگاری", roman: "Mazmoon Nigari", link: "https://drive.google.com/file/d/1_dWTSmF4EuR4W2m_Fu0z1889vHv9IfiL/view" },
+            { id: "urdu-qawaid-02", no: "", uncounted: true, title: "کہانی نگاری", roman: "Kahani Nigari", link: "https://drive.google.com/file/d/1rTDIg_0tc5NWR4m4EUCB93u5_HypdUMH/view" },
+            { id: "urdu-qawaid-03", no: "", uncounted: true, title: "خط و درخواست", roman: "Khat o Darkhwast", link: "https://www.downloadclassnotes.com/10th-class-urdu-notes-letters-for-fbise-punjab-boards/" },
+            { id: "urdu-qawaid-04", no: "", uncounted: true, title: "خاکہ نگاری", roman: "Khaka Nigari", link: "https://www.downloadclassnotes.com/10th-class-urdu-notes-khaka-for-fbise-punjab-boards/" },
+            { id: "urdu-qawaid-05", no: "", uncounted: true, title: "رپورٹ نگاری", roman: "Report Nigari", link: "https://www.downloadclassnotes.com/10th-class-urdu-notes-report-writing-for-fbise-punjab-boards/" },
+            { id: "urdu-qawaid-06", no: "", uncounted: true, title: "تلخیص", roman: "Takhlees", link: "https://www.downloadclassnotes.com/10th-class-urdu-notes-takhlees-for-fbise-punjab-boards/" }
+          ]
+        },
+        {
+          label: "قواعد",
+          note: "Grammar",
+          link: "https://www.downloadclassnotes.com/10th-class-urdu-notes-grammar-for-fbise-punjab-boards/",
+          items: []
+        }
+      ]
+    },
+    {
+      id: "tarjuma-quran",
+      name: "Tarjuma Tul Quran",
+      logName: "Tarjuma Tul Quran",
+      meta: ["Class X", "Tarjuma and important concepts"],
+      count: 9,
+      unitLabel: "surahs",
+      itemColumn: "Surah",
+      note: "Covers chapters 1–9 of the class Tarjuma Tul Quran notes, ending at Surah Bani Israil.",
+      notesUrl: "https://drive.google.com/file/d/15tIxqpjOqF5SHtG-lyR1KV3BBrpBpGqv/view?usp=sharing",
+      groups: [
+        {
+          items: [
+            { id: "tq-01", no: "01", title: "Surah Al-An'am" },
+            { id: "tq-02", no: "02", title: "Surah Al-A'raf" },
+            { id: "tq-03", no: "03", title: "Surah Yunus" },
+            { id: "tq-04", no: "04", title: "Surah Hud" },
+            { id: "tq-05", no: "05", title: "Surah Ar-Ra'd" },
+            { id: "tq-06", no: "06", title: "Surah Ibrahim" },
+            { id: "tq-07", no: "07", title: "Surah Al-Hijr" },
+            { id: "tq-08", no: "08", title: "Surah An-Nahl" },
+            { id: "tq-09", no: "09", title: "Surah Bani Israil" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "physics",
+      name: "Physics",
+      meta: ["Class X", "Textbook of Physics, National Book Foundation"],
+      count: 9,
+      unitLabel: "chapters",
+      itemColumn: "Chapter",
+      notesBase: "https://studyplusplus.com/fbise/10/physics/chapter-",
+      groups: [
+        {
+          items: [
+            { id: "phy-10", no: "10", title: "Heat Capacity and Modes of Heat Transfer", notes: 10 },
+            { id: "phy-11", no: "11", title: "Thermal Expansion and Change of State", notes: 11 },
+            { id: "phy-12", no: "12", title: "Waves", notes: 12 },
+            { id: "phy-13", no: "13", title: "Sound", notes: 13 },
+            { id: "phy-14", no: "14", title: "Optics", notes: 14 },
+            { id: "phy-15", no: "15", title: "Electrostatics", notes: 15 },
+            { id: "phy-16", no: "16", title: "Current Electricity", notes: 16 },
+            { id: "phy-17", no: "17", title: "Electric Circuits", notes: 17 },
+            { id: "phy-18", no: "18", title: "Electronics", notes: 18 }
+          ]
+        }
+      ]
+    },
+    {
+      id: "computer-science",
+      name: "Computer Science",
+      meta: ["Class X", "Session 2026–27 course plan"],
+      count: 6,
+      unitLabel: "chapters",
+      itemColumn: "Chapter",
+      notesBase: "https://studyplusplus.com/fbise/10/computer-science/chapter-",
+      groups: [
+        {
+          items: [
+            { id: "cs-01", no: "01", title: "Computer Systems", notes: 1 },
+            { id: "cs-02", no: "02", title: "Computational Thinking & Algorithms", notes: 2 },
+            { id: "cs-03", no: "03", title: "Programming Fundamentals", notes: 3 },
+            { id: "cs-04", no: "04", title: "Data and Analysis", notes: 4 },
+            { id: "cs-05", no: "05", title: "Applications of Computer Science", notes: 5 },
+            { id: "cs-06", no: "06", title: "Impacts of Computing", notes: 6 }
+          ]
+        }
+      ]
+    },
+    {
+      id: "cs-pba",
+      name: "Computer PBA",
+      meta: ["Class X", "Practical Based Assessment"],
+      count: 6,
+      unitLabel: "topics",
+      itemColumn: "Topic",
+      notesLabel: "Practical Guide",
+      notesUrl: "https://drive.google.com/file/d/1yu_2jQ9gJVSDgSWYeI-pazDHyTGkuXSf/view?usp=sharing",
+      groups: [
+        {
+          label: "Section A",
+          note: "3 topics",
+          items: [
+            {
+              id: "cspba-a-01",
+              no: "01",
+              title: "HTML: write and execute markup for the DOM, formatting, anchor, image, list and table tags",
+              checklist: [
+                "Blogs",
+                "Portfolio",
+                "Personal websites",
+                "Business page",
+                "Homepage",
+                "Contact page",
+                "About us page",
+                "Product page"
+              ]
+            },
+            {
+              id: "cspba-a-02",
+              no: "02",
+              title: "CSS: apply styles and design to a page layout",
+              checklist: [
+                "Text styling",
+                "Colours",
+                "Spacing",
+                "Borders",
+                "Positioning elements"
+              ]
+            },
+            {
+              id: "cspba-a-03",
+              no: "03",
+              title: "JavaScript: variables, input/output, sequencing, conditional and iterative structures, simple functions",
+              checklist: [
+                "Solving arithmetic problems",
+                "Calculating area and volume of geometric shapes",
+                "Comparisons",
+                "Finding factorial of a number",
+                "Printing series"
+              ]
+            }
+          ]
+        },
+        {
+          label: "Section B",
+          note: "3 topics",
+          items: [
+            {
+              id: "cspba-b-01",
+              no: "01",
+              title: "Label and identify the type and purpose of different devices",
+              checklist: [
+                "Input devices",
+                "Output devices",
+                "Processing devices",
+                "Storage devices",
+                "Communication devices"
+              ]
+            },
+            {
+              id: "cspba-b-02",
+              no: "02",
+              title: "Label and identify the different types of software",
+              checklist: [
+                "System software",
+                "Operating system",
+                "Utility programs",
+                "Language translators",
+                "Device drivers",
+                "Application software"
+              ]
+            },
+            {
+              id: "cspba-b-03",
+              no: "03",
+              title: "Develop flowcharts and algorithms with sequencing, conditional and iterative statements",
+              checklist: [
+                "Solving arithmetic problems",
+                "Calculating area and volume of geometric shapes",
+                "Comparisons",
+                "Finding factorial of a number",
+                "Printing series",
+                "Printing table of a number",
+                "Finding the largest or smallest number",
+                "Searching of an element",
+                "Sorting a list"
+              ]
+            }
+          ]
+        }
+      ],
+      note: "Practical work in markup and styling, scripting, computer hardware and software, and algorithm design."
+    }
+  ];
+
+  const papers = [
+    { id: "mathematics", label: "Mathematics", subjectIds: ["mathematics"] },
+    { id: "english", label: "English", subjectIds: ["english"] },
+    { id: "pakistan-studies", label: "Pakistan Studies", subjectIds: ["pakistan-studies"] },
+    { id: "chemistry", label: "Chemistry", subjectIds: ["chemistry", "pba"] },
+    { id: "urdu", label: "Urdu", subjectIds: ["urdu"] },
+    { id: "tarjuma-quran", label: "Tarjuma Tul Quran", subjectIds: ["tarjuma-quran"] },
+    { id: "physics", label: "Physics", subjectIds: ["physics"] },
+    { id: "computer-science", label: "Computer Science", subjectIds: ["computer-science", "cs-pba"] }
+  ];
+
+  const storageKey = "sendup-scope-2026-27";
+  const studyNotesBase = "https://studyplusplus.com/fbise/10/mathematics/exercise-";
+  const exerciseKey = "sendup-math-exercises-2026-27";
+  const exerciseDone = new Set();
+  const topicKey = "sendup-pba-subtopics-2026-27";
+  const topicDone = new Set();
+  const tabKey = "sendup-active-tab-2026-27";
+
+  const knownExercises = new Set(
+    subjects
+      .flatMap(subject => subject.groups.flatMap(group => group.items))
+      .filter(item => item.exercises)
+      .flatMap(item => item.exercises.map(ex => `${item.id}-${ex}`))
+  );
+
+  const knownTopics = new Set(
+    subjects
+      .flatMap(subject => subject.groups.flatMap(group => group.items))
+      .filter(item => item.checklist)
+      .flatMap(item => item.checklist.map((name, index) => `${item.id}-${index}`))
+  );
+
+  try {
+    const savedExercises = JSON.parse(localStorage.getItem(exerciseKey));
+    if (Array.isArray(savedExercises)) {
+      savedExercises.forEach(id => {
+        if (knownExercises.has(id)) exerciseDone.add(id);
+      });
+    }
+  } catch (error) {}
+
+  try {
+    const savedTopics = JSON.parse(localStorage.getItem(topicKey));
+    if (Array.isArray(savedTopics)) {
+      savedTopics.forEach(id => {
+        if (knownTopics.has(id)) topicDone.add(id);
+      });
+    }
+  } catch (error) {}
+  const allItems = subjects.flatMap(subject => subject.groups.flatMap(group => group.items));
+  const countedItems = allItems.filter(item => !item.uncounted);
+  const total = countedItems.length;
+  const done = new Set();
+
+  function countedDone() {
+    return countedItems.filter(item => done.has(item.id)).length;
+  }
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey));
+    if (Array.isArray(saved)) {
+      saved.forEach(id => {
+        if (allItems.some(item => item.id === id)) done.add(id);
+      });
+    }
+  } catch (error) {
+    done.clear();
+  }
+
+  let storeNeedsSync = false;
+  allItems.forEach(item => {
+    if (!item.exercises || done.has(item.id)) return;
+    if (item.exercises.every(ex => exerciseDone.has(`${item.id}-${ex}`))) {
+      done.add(item.id);
+      storeNeedsSync = true;
+    }
+  });
+
+  const paperTabs = document.getElementById("paper-tabs");
+  const tabPanels = document.getElementById("tab-panels");
+  const logSubjects = document.getElementById("log-subjects");
+  const doneCount = document.getElementById("done-count");
+  const totalCount = document.getElementById("total-count");
+  const logStatus = document.getElementById("log-status");
+  const resetButton = document.getElementById("reset");
+
+  const subjectById = new Map(subjects.map(subject => [subject.id, subject]));
+  let activeTab = papers[0].id;
+
+  try {
+    const savedTab = localStorage.getItem(tabKey);
+    if (savedTab && papers.some(paper => paper.id === savedTab)) activeTab = savedTab;
+  } catch (error) {}
+
+  function itemsForSubject(subject) {
+    return subject.groups.flatMap(group => group.items);
+  }
+
+  function doneForSubject(subject) {
+    return itemsForSubject(subject).filter(item => !item.uncounted && done.has(item.id)).length;
+  }
+
+  function itemsForPaper(paper) {
+    return paper.subjectIds
+      .flatMap(id => itemsForSubject(subjectById.get(id)))
+      .filter(item => !item.uncounted);
+  }
+
+  function doneForPaper(paper) {
+    return itemsForPaper(paper).filter(item => done.has(item.id)).length;
+  }
+
+  function paperForSubject(subjectId) {
+    return papers.find(paper => paper.subjectIds.includes(subjectId));
+  }
+
+  function exerciseMarkup(item) {
+    const links = item.exercises.map(ex => {
+      const key = `${item.id}-${ex}`;
+      const href = `${studyNotesBase}${ex.replace(".", "-")}`;
+      const ticked = exerciseDone.has(key);
+      return `<div class="exercise-link${ticked ? " is-done" : ""}">
+        <label class="exercise-tick">
+          <input type="checkbox" data-ex="${key}"${ticked ? " checked" : ""}>
+          <span class="box" aria-hidden="true"></span>
+          <span class="exercise-name">Exercise ${ex}</span>
+        </label>
+        <a class="row-note" href="${href}" target="_blank" rel="noopener" aria-label="Open StudyPlusPlus notes for exercise ${ex}">Notes</a>
+      </div>`;
+    }).join("");
+    const count = item.exercises.length;
+    const tickedCount = item.exercises.filter(ex => exerciseDone.has(`${item.id}-${ex}`)).length;
+    return `<details class="exercise-drawer">
+      <summary><span data-ex-label="${item.id}">${tickedCount}/${count} exercises</span></summary>
+      <div class="collapse">
+        <div class="collapse-inner exercise-links">${links}</div>
+      </div>
+    </details>`;
+  }
+
+  function topicMarkup(item) {
+    const list = item.checklist || [];
+    const ticked = list.filter((name, index) => topicDone.has(`${item.id}-${index}`)).length;
+    const rows = list.map((name, index) => {
+      const key = `${item.id}-${index}`;
+      const on = topicDone.has(key);
+      return `<div class="exercise-link${on ? " is-done" : ""}">
+        <label class="exercise-tick">
+          <input type="checkbox" data-sub="${key}"${on ? " checked" : ""}>
+          <span class="box" aria-hidden="true"></span>
+          <span class="exercise-name">${name}</span>
+        </label>
+      </div>`;
+    }).join("");
+    return `<details class="exercise-drawer">
+      <summary><span data-sub-label="${item.id}">${ticked}/${list.length} sub-topics</span></summary>
+      <div class="collapse">
+        <div class="collapse-inner exercise-links">${rows}</div>
+      </div>
+    </details>`;
+  }
+
+  function chapterNotesHref(item, group, subject) {
+    if (item.notes === undefined) return "";
+    const base = group.notesBase || subject.notesBase || "";
+    return `${base}${item.notes}`;
+  }
+
+  function itemMarkup(item, subject, group) {
+    if (subject.lang === "ur") {
+      const noteLink = item.link
+        ? `<a class="row-note" href="${item.link}" target="_blank" rel="noopener" aria-label="Open the notes for ${item.roman || item.title}">Notes</a>`
+        : "";
+      return `<li>
+        <div class="row row--urdu${done.has(item.id) ? " is-done" : ""}">
+          <label class="row-label">
+            <input type="checkbox" id="${item.id}" data-id="${item.id}" data-subject="${subject.id}"${done.has(item.id) ? " checked" : ""}>
+            <span class="box" aria-hidden="true"></span>
+            <span class="item item--urdu">
+              <span class="urdu-title" lang="ur" dir="rtl"><span class="urdu-no">${item.no}</span> ${item.title}</span>
+              <span class="urdu-gloss" lang="ur-Latn" dir="ltr">${item.roman || ""}</span>
+            </span>
+          </label>${noteLink}
+        </div>
+      </li>`;
+    }
+    const formTag = item.form ? `<span class="form">(${item.form})</span>` : "";
+    const exercises = item.exercises ? exerciseMarkup(item) : item.checklist ? topicMarkup(item) : "";
+    const href = chapterNotesHref(item, group, subject);
+    const noteLink = href
+      ? `<a class="row-note" href="${href}" target="_blank" rel="noopener" aria-label="Open StudyPlusPlus notes for chapter ${item.no}">Notes</a>`
+      : "";
+    return `<li${item.exercises || item.checklist ? ' class="math-entry"' : ""}>
+      <div class="row${done.has(item.id) ? " is-done" : ""}">
+        <label class="row-label">
+          <input type="checkbox" id="${item.id}" data-id="${item.id}" data-subject="${subject.id}"${done.has(item.id) ? " checked" : ""}>
+          <span class="box" aria-hidden="true"></span>
+          <span class="item"><span class="item-no">${item.no}</span><span class="item-title">${item.title}</span>${formTag}</span>
+        </label>${noteLink}
+      </div>
+      ${exercises}
+    </li>`;
+  }
+
+  function groupMarkup(group, subject) {
+    const isUrdu = subject.lang === "ur";
+    const headingNote = group.link
+      ? `<a class="row-note group-link" href="${group.link}" target="_blank" rel="noopener" title="Open the notes for ${group.label}">Notes</a>`
+      : "";
+    const heading = group.label
+      ? `<h3 class="group-title${isUrdu ? " group-title--urdu" : ""}">
+          <span class="group-label"${isUrdu ? ' lang="ur" dir="rtl"' : ""}>${group.label}</span>
+          ${group.note ? `<span class="group-note">${group.note}</span>` : ""}
+          ${headingNote}
+        </h3>`
+      : "";
+    const rowHead = isUrdu || !group.items.length
+      ? ""
+      : `<div class="row-head" aria-hidden="true"><span></span><span>${subject.itemColumn}</span></div>`;
+    const rows = group.items.length
+      ? `<ul class="rows">
+        ${group.items.map(item => itemMarkup(item, subject, group)).join("")}
+      </ul>`
+      : "";
+    return `<div class="group">
+      ${heading}
+      ${rowHead}
+      ${rows}
+    </div>`;
+  }
+
+  function subjectMarkup(subject, isLast) {
+    const classes = ["subject"];
+    if (!isLast) classes.push("subject--stacked");
+    if (subject.id === "pba" || subject.id === "cs-pba") classes.push("subject--pba");
+    if (subject.lang === "ur") classes.push("subject--urdu");
+    const nativeName = subject.nativeName
+      ? ` <span class="subject-native" lang="ur" dir="rtl">${subject.nativeName}</span>`
+      : "";
+    const notesLabel = subject.notesLabel || "Notes";
+    const subjectNotes = subject.notesUrl
+      ? `<a class="subject-note" href="${subject.notesUrl}" target="_blank" rel="noopener" title="Open the ${notesLabel.toLowerCase()} for the whole paper">${notesLabel}</a>`
+      : "";
+    const exam = examForSubject(subject.id);
+    const timer = exam
+      ? `<p class="subject-timer" data-exam-timer="${subject.id}" title="Paper on ${longDateFormat.format(exam.at)}, from 07:00">
+            <span class="timer-label">Paper in</span>
+            <span class="timer-value" data-subject-clock="${subject.id}">${shortCountdown(exam.at.getTime(), Date.now())}</span>
+          </p>`
+      : "";
+    return `<section class="${classes.join(" ")}" id="${subject.id}" aria-labelledby="${subject.id}-title">
+      <header class="subject-head">
+        <div>
+          <div class="subject-title-row">
+            <h2 id="${subject.id}-title">${subject.name}${nativeName}</h2>
+            ${subjectNotes}
+          </div>
+          <p class="subject-meta">${subject.meta.join("<br>")}</p>
+        </div>
+        <div class="subject-facts">
+          <p class="subject-scope"><strong>${subject.count}</strong> ${subject.unitLabel}</p>
+          ${timer}
+        </div>
+      </header>
+      ${subject.groups.map(group => groupMarkup(group, subject)).join("")}
+      ${subject.note ? `<p class="section-note">${subject.note}</p>` : ""}
+    </section>`;
+  }
+
+  function tabMarkup(paper) {
+    const selected = paper.id === activeTab;
+    return `<button class="paper-tab" type="button" role="tab" id="tab-${paper.id}" aria-controls="panel-${paper.id}" aria-selected="${selected}" data-tab="${paper.id}" tabindex="${selected ? "0" : "-1"}">
+      <span class="tab-name">${paper.label}</span>
+      <span class="tab-progress"><span data-tab-done="${paper.id}">${doneForPaper(paper)}</span>/${itemsForPaper(paper).length}</span>
+    </button>`;
+  }
+
+  function panelMarkup(paper) {
+    const sections = paper.subjectIds.map(id => subjectById.get(id));
+    return `<section class="tab-panel" role="tabpanel" id="panel-${paper.id}" aria-labelledby="tab-${paper.id}" tabindex="0"${paper.id === activeTab ? "" : " hidden"}>
+      ${sections.map((subject, index) => subjectMarkup(subject, index === sections.length - 1)).join("")}
+    </section>`;
+  }
+
+  function logMarkup(subject) {
+    const marks = itemsForSubject(subject)
+      .filter(item => !item.uncounted)
+      .map(item => `<span class="log-mark${done.has(item.id) ? " is-on" : ""}" data-mark="${item.id}"></span>`)
+      .join("");
+    const paper = paperForSubject(subject.id);
+    return `<button class="log-subject" type="button" data-open-tab="${paper.id}" data-anchor="${subject.id}">
+      <span class="log-name">${subject.logName || subject.name}</span>
+      <span class="log-marks" aria-hidden="true">${marks}</span>
+      <span class="log-fraction"><span data-done="${subject.id}">${doneForSubject(subject)}</span>/${subject.count}</span>
+    </button>`;
+  }
+
+  function activateTab(id, { focusTab = false, scroll = false, anchor = "" } = {}) {
+    const tab = paperTabs.querySelector(`[data-tab="${id}"]`);
+    if (!tab) return;
+    const changed = id !== activeTab;
+    activeTab = id;
+    try {
+      localStorage.setItem(tabKey, id);
+    } catch (error) {}
+    paperTabs.querySelectorAll(".paper-tab").forEach(item => {
+      const selected = item === tab;
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
+    });
+    tabPanels.querySelectorAll(".tab-panel").forEach(panel => {
+      panel.hidden = panel.id !== `panel-${id}`;
+    });
+    if (changed) {
+      const panel = document.getElementById(`panel-${id}`);
+      if (panel) {
+        panel.classList.remove("is-switching");
+        void panel.offsetWidth;
+        panel.classList.add("is-switching");
+        panel.addEventListener("animationend", () => panel.classList.remove("is-switching"), { once: true });
+      }
+    }
+    if (focusTab) tab.focus({ preventScroll: true });
+    if (scroll) {
+      const panel = document.getElementById(`panel-${id}`);
+      const target = anchor ? document.getElementById(anchor) : panel;
+      if (panel) panel.focus({ preventScroll: true });
+      if (target) {
+        target.scrollIntoView({
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+          block: "start"
+        });
+      }
+    }
+  }
+
+  function updateLog() {
+    doneCount.textContent = countedDone();
+    subjects.forEach(subject => {
+      const node = document.querySelector(`[data-done="${subject.id}"]`);
+      if (node) node.textContent = doneForSubject(subject);
+    });
+    papers.forEach(paper => {
+      const node = document.querySelector(`[data-tab-done="${paper.id}"]`);
+      if (node) node.textContent = doneForPaper(paper);
+    });
+    document.querySelectorAll("[data-mark]").forEach(mark => {
+      mark.classList.toggle("is-on", done.has(mark.dataset.mark));
+    });
+  }
+
+  function persist() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify([...done]));
+    } catch (error) {
+      return;
+    }
+  }
+
+  function render() {
+    paperTabs.innerHTML = papers.map(tabMarkup).join("");
+    tabPanels.innerHTML = papers.map(panelMarkup).join("");
+    logSubjects.innerHTML = subjects.map(logMarkup).join("");
+    totalCount.textContent = total;
+    doneCount.textContent = countedDone();
+  }
+
+  paperTabs.addEventListener("click", event => {
+    const tab = event.target.closest('[role="tab"]');
+    if (!tab) return;
+    activateTab(tab.dataset.tab);
+  });
+
+  paperTabs.addEventListener("keydown", event => {
+    if (!["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
+    const tabs = [...paperTabs.querySelectorAll('[role="tab"]')];
+    const current = tabs.indexOf(document.activeElement);
+    if (current < 0) return;
+    let next = current;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (current + 1) % tabs.length;
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (current - 1 + tabs.length) % tabs.length;
+    if (event.key === "Home") next = 0;
+    if (event.key === "End") next = tabs.length - 1;
+    event.preventDefault();
+    activateTab(tabs[next].dataset.tab, { focusTab: true });
+  });
+
+  logSubjects.addEventListener("click", event => {
+    const row = event.target.closest("[data-open-tab]");
+    if (!row) return;
+    activateTab(row.dataset.openTab, { scroll: true, anchor: row.dataset.anchor });
+  });
+
+  function updateExerciseLabels() {
+    document.querySelectorAll(".exercise-drawer").forEach(drawer => {
+      const boxes = drawer.querySelectorAll("input[data-ex]");
+      const ticked = [...boxes].filter(box => box.checked).length;
+      const label = drawer.querySelector("[data-ex-label]");
+      if (label) label.textContent = `${ticked}/${boxes.length} exercises`;
+    });
+  }
+
+  function saveExercises() {
+    try {
+      localStorage.setItem(exerciseKey, JSON.stringify([...exerciseDone]));
+    } catch (error) {}
+  }
+
+  function saveTopics() {
+    try {
+      localStorage.setItem(topicKey, JSON.stringify([...topicDone]));
+    } catch (error) {}
+  }
+
+  function updateTopicLabels() {
+    document.querySelectorAll("[data-sub-label]").forEach(label => {
+      const drawer = label.closest("details");
+      if (!drawer) return;
+      const boxes = drawer.querySelectorAll("input[data-sub]");
+      const ticked = [...boxes].filter(box => box.checked).length;
+      label.textContent = `${ticked}/${boxes.length} sub-topics`;
+    });
+  }
+
+  function setChapterDone(entry, isDone) {
+    const chapter = entry.querySelector(':scope > .row input[data-id]');
+    if (!chapter) return;
+    if (chapter.checked === isDone) return;
+    chapter.checked = isDone;
+    entry.querySelector(":scope > .row").classList.toggle("is-done", isDone);
+    if (isDone) {
+      done.add(chapter.dataset.id);
+    } else {
+      done.delete(chapter.dataset.id);
+    }
+    persist();
+    updateLog();
+    logStatus.textContent = `${countedDone()} of ${total} items ticked.`;
+  }
+
+  function syncChapterFromExercises(entry) {
+    if (!entry) return;
+    const boxes = [...entry.querySelectorAll("input[data-ex]")];
+    if (!boxes.length) return;
+    setChapterDone(entry, boxes.every(box => box.checked));
+  }
+
+  function syncExercisesFromChapter(entry) {
+    if (!entry) return;
+    const chapter = entry.querySelector(':scope > .row input[data-id]');
+    if (!chapter) return;
+    const isDone = chapter.checked;
+    entry.querySelectorAll("input[data-ex]").forEach(box => {
+      if (isDone) {
+        exerciseDone.add(box.dataset.ex);
+      } else {
+        exerciseDone.delete(box.dataset.ex);
+      }
+      box.checked = isDone;
+      box.closest(".exercise-link").classList.toggle("is-done", isDone);
+    });
+    saveExercises();
+    updateExerciseLabels();
+  }
+
+  tabPanels.addEventListener("change", event => {
+    const input = event.target;
+    if (!input.matches('input[type="checkbox"]')) return;
+    if (input.dataset.sub) {
+      const key = input.dataset.sub;
+      if (input.checked) {
+        topicDone.add(key);
+      } else {
+        topicDone.delete(key);
+      }
+      saveTopics();
+      input.closest(".exercise-link").classList.toggle("is-done", input.checked);
+      updateTopicLabels();
+      return;
+    }
+    if (input.dataset.ex) {
+      const key = input.dataset.ex;
+      if (input.checked) {
+        exerciseDone.add(key);
+      } else {
+        exerciseDone.delete(key);
+      }
+      saveExercises();
+      input.closest(".exercise-link").classList.toggle("is-done", input.checked);
+      updateExerciseLabels();
+      syncChapterFromExercises(input.closest(".math-entry"));
+      return;
+    }
+    const id = input.dataset.id;
+    if (input.checked) {
+      done.add(id);
+    } else {
+      done.delete(id);
+    }
+    input.closest(".row").classList.toggle("is-done", input.checked);
+    persist();
+    updateLog();
+    logStatus.textContent = `${countedDone()} of ${total} items ticked.`;
+    syncExercisesFromChapter(input.closest(".math-entry"));
+  });
+
+  resetButton.addEventListener("click", () => {
+    if (done.size === 0) return;
+    if (!window.confirm("Clear every tick? This cannot be undone.")) return;
+    done.clear();
+    exerciseDone.clear();
+    topicDone.clear();
+    tabPanels.querySelectorAll('input[type="checkbox"]').forEach(input => {
+      input.checked = false;
+      const row = input.closest(".row");
+      if (row) row.classList.remove("is-done", "is-target");
+    });
+    try {
+      localStorage.removeItem(exerciseKey);
+      localStorage.removeItem(topicKey);
+    } catch (error) {}
+    tabPanels.querySelectorAll(".exercise-link").forEach(link => link.classList.remove("is-done"));
+    updateExerciseLabels();
+    updateTopicLabels();
+    persist();
+    updateLog();
+    logStatus.textContent = "All ticks cleared.";
+  });
+
+  const examSchedule = [
+    { y: 2026, m: 11, d: 10, subject: "Mathematics" },
+    { y: 2026, m: 11, d: 12, subject: "English" },
+    { y: 2026, m: 11, d: 14, subject: "Pakistan Studies" },
+    { y: 2026, m: 11, d: 16, subject: "Chemistry" },
+    { y: 2026, m: 11, d: 17, subject: "Chemistry PBA" },
+    { y: 2026, m: 11, d: 19, subject: "Urdu" },
+    { y: 2026, m: 11, d: 21, subject: "Tarjuma Tul Quran" },
+    { y: 2026, m: 11, d: 23, subject: "Physics" },
+    { y: 2026, m: 11, d: 24, subject: "Physics PBA" },
+    { y: 2026, m: 11, d: 26, subject: "Biology / Computer Science" },
+    { y: 2026, m: 11, d: 27, subject: "Biology / Computer Science PBA" }
+  ];
+
+  const arrivalHour = 7;
+  const exams = examSchedule
+    .map(paper => ({
+      subject: paper.subject,
+      at: new Date(paper.y, paper.m - 1, paper.d, arrivalHour, 0, 0, 0)
+    }))
+    .sort((a, b) => a.at - b.at);
+
+  const examSubjectFor = {
+    mathematics: "Mathematics",
+    english: "English",
+    "pakistan-studies": "Pakistan Studies",
+    chemistry: "Chemistry",
+    pba: "Chemistry PBA",
+    urdu: "Urdu",
+    "tarjuma-quran": "Tarjuma Tul Quran",
+    physics: "Physics",
+    "computer-science": "Biology / Computer Science",
+    "cs-pba": "Biology / Computer Science PBA"
+  };
+
+  function examForSubject(subjectId) {
+    const name = examSubjectFor[subjectId];
+    return name ? exams.find(exam => exam.subject === name) || null : null;
+  }
+
+  const nextPaper = document.getElementById("next-paper");
+  const nextPaperTitle = document.getElementById("next-paper-title");
+  const nextDateBlock = document.getElementById("next-date");
+  const nextDay = document.getElementById("next-day");
+  const nextMonth = document.getElementById("next-month");
+  const nextSubject = document.getElementById("next-subject");
+  const nextWeekday = document.getElementById("next-weekday");
+  const nextTime = document.getElementById("next-time");
+  const nextClock = document.getElementById("next-clock");
+  const clockNumbers = [...nextClock.querySelectorAll("[data-clock]")];
+  const datesheet = document.getElementById("datesheet");
+  const datesheetRows = document.getElementById("datesheet-rows");
+  const datesheetCount = document.getElementById("datesheet-count");
+  const datesheetFoot = document.getElementById("datesheet-foot");
+
+  const weekdayFormat = new Intl.DateTimeFormat(undefined, { weekday: "long" });
+  const longDateFormat = new Intl.DateTimeFormat(undefined, { weekday: "long", day: "numeric", month: "long" });
+  const shortDateFormat = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" });
+  const monthFormat = new Intl.DateTimeFormat(undefined, { month: "short" });
+
+  const pad = value => String(value).padStart(2, "0");
+
+  function splitCountdown(target, now) {
+    const seconds = Math.max(0, Math.floor((target - now) / 1000));
+    return {
+      d: Math.floor(seconds / 86400),
+      h: Math.floor((seconds % 86400) / 3600),
+      m: Math.floor((seconds % 3600) / 60),
+      s: seconds % 60
+    };
+  }
+
+  function rowCountdown(target, now) {
+    const left = splitCountdown(target, now);
+    return left.d > 0
+      ? `${left.d}d ${pad(left.h)}h ${pad(left.m)}m`
+      : `${pad(left.h)}h ${pad(left.m)}m ${pad(left.s)}s`;
+  }
+
+  function shortCountdown(target, now) {
+    if (target <= now) return "done";
+    const left = splitCountdown(target, now);
+    if (left.d > 0) return `${left.d}d ${pad(left.h)}h`;
+    if (left.h > 0) return `${pad(left.h)}h ${pad(left.m)}m`;
+    return `${pad(left.m)}m ${pad(left.s)}s`;
+  }
+
+  function renderSubjectTimers(now = Date.now()) {
+    document.querySelectorAll("[data-exam-timer]").forEach(node => {
+      const exam = examForSubject(node.dataset.examTimer);
+      const value = node.querySelector("[data-subject-clock]");
+      const label = node.querySelector(".timer-label");
+      if (!exam || !value) return;
+      const ms = exam.at.getTime() - now;
+      const over = ms <= 0;
+      node.classList.toggle("is-past", over);
+      node.classList.toggle("is-soon", !over && ms < 2 * 86400000);
+      if (label) label.textContent = over ? "Paper" : "Paper in";
+      value.textContent = shortCountdown(exam.at.getTime(), now);
+    });
+  }
+
+  let rowCount = -1;
+  let finished = false;
+
+  function renderDatesheet() {
+    const now = Date.now();
+    const upcoming = exams.filter(exam => exam.at.getTime() > now);
+
+    if (!upcoming.length) {
+      finishDatesheet();
+      return;
+    }
+
+    const next = upcoming[0];
+    const left = splitCountdown(next.at.getTime(), now);
+
+    nextDay.textContent = next.at.getDate();
+    nextMonth.textContent = monthFormat.format(next.at);
+    nextSubject.textContent = next.subject;
+    nextWeekday.textContent = longDateFormat.format(next.at);
+    clockNumbers[0].textContent = pad(left.d);
+    clockNumbers[1].textContent = pad(left.h);
+    clockNumbers[2].textContent = pad(left.m);
+    clockNumbers[3].textContent = pad(left.s);
+    nextPaper.classList.toggle("is-soon", left.d === 0);
+
+    if (upcoming.length !== rowCount) {
+      rowCount = upcoming.length;
+      datesheetCount.textContent = `${upcoming.length} ${upcoming.length === 1 ? "paper" : "papers"}`;
+      datesheetRows.innerHTML = upcoming.map(exam => `<li class="datesheet-row">
+            <span class="datesheet-when">
+              <span class="datesheet-day">${weekdayFormat.format(exam.at)}</span>
+              <span class="datesheet-date">${shortDateFormat.format(exam.at)}</span>
+            </span>
+            <span class="datesheet-subject">${exam.subject}</span>
+            <span class="datesheet-time">${rowCountdown(exam.at.getTime(), now)}</span>
+          </li>`).join("");
+    } else {
+      datesheetRows.querySelectorAll(".datesheet-time").forEach((node, index) => {
+        node.textContent = rowCountdown(upcoming[index].at.getTime(), now);
+      });
+    }
+  }
+
+  function finishDatesheet() {
+    if (finished) return;
+    finished = true;
+    nextPaper.classList.add("is-finished");
+    nextPaperTitle.textContent = "All papers are done";
+    nextDateBlock.hidden = true;
+    nextSubject.textContent = "The send-up date sheet is closed.";
+    nextWeekday.textContent = `All ${exams.length} papers, finished.`;
+    nextTime.textContent = "Nothing left to count down to.";
+    nextClock.hidden = true;
+    datesheet.hidden = true;
+    window.setTimeout(launchConfetti, 250);
+  }
+
+  function launchConfetti() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const canvas = document.createElement("canvas");
+    canvas.className = "confetti";
+    canvas.setAttribute("aria-hidden", "true");
+    const context = canvas.getContext("2d");
+    if (!context) return;
+
+    const colors = ["#a92b22", "#e7b84b", "#1d5a3d", "#e9eee7", "#dbe3d9"];
+    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.round(width * ratio);
+      canvas.height = Math.round(height * ratio);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    resize();
+    document.body.appendChild(canvas);
+
+    const pieces = Array.from({ length: 130 }, () => ({
+      x: Math.random() * width,
+      y: -20 - Math.random() * height * 0.4,
+      w: 5 + Math.random() * 6,
+      h: 8 + Math.random() * 9,
+      vx: -0.7 + Math.random() * 1.4,
+      vy: 2.6 + Math.random() * 2.6,
+      spin: -0.14 + Math.random() * 0.28,
+      angle: Math.random() * Math.PI,
+      color: colors[Math.floor(Math.random() * colors.length)]
+    }));
+
+    const started = performance.now();
+
+    function cleanup() {
+      window.removeEventListener("resize", resize);
+      canvas.remove();
+    }
+
+    function frame(now) {
+      const elapsed = now - started;
+      context.clearRect(0, 0, width, height);
+      let falling = false;
+      pieces.forEach(piece => {
+        piece.x += piece.vx;
+        piece.y += piece.vy;
+        piece.vy += 0.02;
+        piece.angle += piece.spin;
+        if (piece.y < height + 48) falling = true;
+        context.save();
+        context.translate(piece.x, piece.y);
+        context.rotate(piece.angle);
+        context.globalAlpha = elapsed > 5200 ? Math.max(0, 1 - (elapsed - 5200) / 2000) : 1;
+        context.fillStyle = piece.color;
+        context.fillRect(-piece.w / 2, -piece.h / 2, piece.w, piece.h);
+        context.restore();
+      });
+      if (falling && elapsed < 7200) {
+        requestAnimationFrame(frame);
+      } else {
+        cleanup();
+      }
+    }
+
+    window.addEventListener("resize", resize, { passive: true });
+    requestAnimationFrame(frame);
+  }
+
+  datesheetFoot.textContent = `Countdowns end at 07:00 (${Intl.DateTimeFormat().resolvedOptions().timeZone || "local time"}) on each exam day.`;
+
+  function setupCollapse(details) {
+    const collapse = details.querySelector(":scope > .collapse");
+    if (!collapse) return;
+    let busy = false;
+
+    function settle(after) {
+      function done() {
+        collapse.removeEventListener("transitionend", onEnd);
+        window.clearTimeout(timer);
+        busy = false;
+        if (after) {
+          after();
+        } else {
+          collapse.classList.remove("is-animating");
+          collapse.style.gridTemplateRows = "";
+        }
+      }
+
+      function onEnd(event) {
+        if (event.propertyName === "grid-template-rows") done();
+      }
+
+      collapse.addEventListener("transitionend", onEnd);
+      const timer = window.setTimeout(done, 420);
+    }
+
+    details.addEventListener("click", event => {
+      const summary = event.target.closest("summary");
+      if (!summary) return;
+      event.preventDefault();
+      if (busy) return;
+      busy = true;
+
+      if (details.open) {
+        details.classList.remove("is-open");
+        collapse.classList.add("is-animating");
+        collapse.style.gridTemplateRows = "0fr";
+        settle(() => {
+          details.open = false;
+          collapse.classList.remove("is-animating");
+          collapse.style.gridTemplateRows = "";
+        });
+      } else {
+        details.classList.add("is-open");
+        details.open = true;
+        collapse.classList.add("is-animating");
+        collapse.style.transition = "none";
+        collapse.style.gridTemplateRows = "0fr";
+        void collapse.offsetHeight;
+        collapse.style.transition = "";
+        collapse.style.gridTemplateRows = "1fr";
+        settle();
+      }
+    });
+  }
+
+  render();
+  document.querySelectorAll("details.exercise-drawer, details.datesheet").forEach(setupCollapse);
+  renderDatesheet();
+  renderSubjectTimers();
+  window.setInterval(() => {
+    renderDatesheet();
+    renderSubjectTimers();
+  }, 1000);
+  if (storeNeedsSync) persist();
+</script>
+</body>
+</html>
