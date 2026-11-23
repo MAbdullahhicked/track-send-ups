@@ -1886,6 +1886,55 @@
       ]
     },
     {
+      id: "physics-pba",
+      name: "Physics PBA",
+      meta: ["Class X", "Practical Based Assessment"],
+      count: 16,
+      unitLabel: "experiments",
+      itemColumn: "Experiment",
+      notesLabel: "Practical Guide",
+      notesUrl: "https://drive.google.com/file/d/1zB1V1YRR9-ZfUWvyEMsR27lF5PvXm1uz/view?usp=sharing",
+      groups: [
+        {
+          label: "Section A",
+          note: "8 experiments (60%)",
+          items: [
+            { id: "phypba-a-01", no: "01", title: "Measure the radius and length of a metallic cylinder using vernier callipers up to correct number of significant figures" },
+            { id: "phypba-a-02", no: "02", title: "Analyze the thickness of a metallic wire with vernier calipers and a screw gauge with their respective precision" },
+            { id: "phypba-a-03", no: "03", title: "Study the motion of a ball rolling down an angle iron; measure the time intervals for different distances and draw a distance-time graph" },
+            { id: "phypba-a-04", no: "04", title: "Determine the time period of a simple pendulum and investigate the relationship between length and its time period" },
+            { id: "phypba-a-05", no: "05", title: "Determine the specific heat capacity of a liquid (water) or a metal (lead) using the method of mixtures" },
+            { id: "phypba-a-06", no: "06", title: "Draw the temperature-time graph for heating ice and water to measure the latent heat of fusion of ice and latent heat of vaporization of water" },
+            { id: "phypba-a-07", no: "07", title: "Study the position of image formed by a convex lens (converging lens) when the object is placed at different positions in front of it" },
+            {
+              id: "phypba-a-08",
+              no: "08",
+              title: "Study the effect of combining resistors in series and parallel on the total (equivalent) resistance",
+              checklist: [
+                "8-a: Study the effect of combining resistors in series and parallel on the total (equivalent) resistance",
+                "8-b: Study resistors in parallel circuit"
+              ]
+            }
+          ]
+        },
+        {
+          label: "Section B",
+          note: "8 experiments (40%)",
+          items: [
+            { id: "phypba-b-01", no: "01", title: "Determine the spring constant of a Helical Spring using a load-extension graph" },
+            { id: "phypba-b-02", no: "02", title: "Determine the position of centre of gravity of a plane (thin) lamina using a plumb line" },
+            { id: "phypba-b-03", no: "03", title: "Determine the volume of an irregular shaped insoluble stone by displacement method and calculate its density" },
+            { id: "phypba-b-04", no: "04", title: "Study the laws of reflection using a plane mirror" },
+            { id: "phypba-b-05", no: "05", title: "Investigate refraction through a glass slab and calculate its refractive index" },
+            { id: "phypba-b-06", no: "06", title: "Find the critical angle of a prism" },
+            { id: "phypba-b-07", no: "07", title: "Measure the current and voltage across a resistor and plot its V-I characteristics" },
+            { id: "phypba-b-08", no: "08", title: "Identify the relationship between the potential difference across a wire and its length" }
+          ]
+        }
+      ],
+      note: "Practical work in mechanics, heat, optics and electricity."
+    },
+    {
       id: "computer-science",
       name: "Computer Science",
       meta: ["Class X", "Session 2026–27 course plan"],
@@ -2020,7 +2069,7 @@
     { id: "chemistry", label: "Chemistry", subjectIds: ["chemistry", "pba"] },
     { id: "urdu", label: "Urdu", subjectIds: ["urdu"] },
     { id: "tarjuma-quran", label: "Tarjuma Tul Quran", subjectIds: ["tarjuma-quran"] },
-    { id: "physics", label: "Physics", subjectIds: ["physics"] },
+    { id: "physics", label: "Physics", subjectIds: ["physics", "physics-pba"] },
     { id: "computer-science", label: "Computer Science", subjectIds: ["computer-science", "cs-pba"] }
   ];
 
@@ -2248,7 +2297,7 @@
   function subjectMarkup(subject, isLast) {
     const classes = ["subject"];
     if (!isLast) classes.push("subject--stacked");
-    if (subject.id === "pba" || subject.id === "cs-pba") classes.push("subject--pba");
+    if (subject.id === "pba" || subject.id === "cs-pba" || subject.id === "physics-pba") classes.push("subject--pba");
     if (subject.lang === "ur") classes.push("subject--urdu");
     const nativeName = subject.nativeName
       ? ` <span class="subject-native" lang="ur" dir="rtl">${subject.nativeName}</span>`
@@ -2574,6 +2623,7 @@
     urdu: "Urdu",
     "tarjuma-quran": "Tarjuma Tul Quran",
     physics: "Physics",
+    "physics-pba": "Physics PBA",
     "computer-science": "Biology / Computer Science",
     "cs-pba": "Biology / Computer Science PBA"
   };
